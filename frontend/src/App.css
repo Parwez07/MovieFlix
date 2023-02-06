@@ -1,0 +1,136 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: black !important;
+}
+
+.flex{
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  height: 4vh;
+    width: 20vh;
+    object-fit: cover;
+}
+
+.nav-link{
+  margin: 0 10px !important;
+}
+
+.home{
+  background: black;
+  min-height: 75vh;
+}
+
+.contents{
+  position: absolute;
+    top: 30vh;
+    color: white;
+}
+
+.player{
+  height: 84vh;
+    background: black;
+    padding: 10px 20px;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.movies{
+  background: black;
+  padding: 1rem 0;
+}
+
+.movie-card{
+  transition: all 0.2s ease-in-out;
+}
+
+.poster {
+  width: 30vw;
+  aspect-ratio: 1;
+  align-self: center;
+  transition: all 0.3s ease-in-out;
+  border-radius: 15px;
+}
+.form{
+  width: 40%;
+  margin: auto;
+}
+
+.movie-card:hover,
+.poster:hover
+{
+  transform: rotate3d(1, 1, 1, 25deg);
+  box-shadow: -13px 22px 0px 5px lightskyblue;
+}
+
+.home-card{
+  width: 70% !important;
+}
+.mt-card{
+  width: 50% !important;
+}
+.custom{
+  width: 30% !important;
+}
+
+@media screen and (max-width: 800px) {
+  .home{
+    background: linear-gradient(180deg, black, #530306) !important;
+  }
+  .home-card,
+  .mt-card
+  {
+    width: 90% !important;
+  }
+  .movie-card:hover{
+    transform: rotate3d(1, 1, 1, 5deg) !important;
+  }
+  .poster{
+    width: 70vw;
+    margin: 10px 0;
+  }
+  .navbar-nav-scroll{
+    max-height: inherit !important;
+  }
+  .movies{
+    padding: 1px 0 !important;
+  }
+  
+  .custom{
+    width: 85% !important;
+  }
+  .form{
+    width: 80%;
+  }
+    .form-label{
+      text-align: start !important;
+    }
+}
